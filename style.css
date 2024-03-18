@@ -1,0 +1,70 @@
+body {
+    background: #888888
+}
+
+#banner{
+    width: 99%;
+    height: 688px;
+}
+
+h1 {
+    text-align: center;
+    height: 40px;
+    /* border: 16px solid #000000; */
+    padding: 5px;
+    margin: -1px;
+
+}
+
+#missao{
+    font-size: 20px;
+    text-align: center;
+}
+
+em strong {
+    color: #FF0000
+}
+
+h2{
+    text-align: center;
+}
+
+.itens{
+    font-size: 20px;
+    font-style: italic;
+}
+#lista{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Como funciona as cores */
+/* abcdef */
+/* binário 01 */
+/* numérico 0123456789 */
+/* hexadecimal 0123456789ABCDEF */
+/* RGB = Red Green Blue */
+/* # _ _ _ _ _ _ */
+/* 0 = ausência */
+/* F = máximo */
+/* #000000 = preto ausência de todas as cores */
+/* #FFFFFF = branco máximo de todas as cores */
+/* RGB 0,1,2,3,...255 */
+/* 0 = ausência */
+/* 255 = máximo */
+/* rgb(255,255,255) = Branco */
+/* rgb(0,0,255) = Azul */

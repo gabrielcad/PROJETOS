@@ -1,13 +1,22 @@
 body {
-    background: #888888
 }
 
 #banner{
-    width: 99%;
+    width: 100%;
     height: 688px;
 }
 
-h1 {
+.principal{
+    background: #888888;
+    padding: 30px;
+
+}
+
+.tituloprincipal{
+    padding-left: 20px;
+}
+
+.titulocentralizado {
     text-align: center;
     height: 40px;
     /* border: 16px solid #000000; */
@@ -29,21 +38,28 @@ em strong {
     color: #FF0000
 }
 
-h2{
-    text-align: center;
-}
-
 .itens{
     font-size: 20px;
     font-style: italic;
 }
-#lista{
-    display: flex;
+
+.beneficios{
+    /* display: flex; */
     justify-content: center;
-    /* text-align: center; */
-    
+    background-color: #ffffff;  
+    padding: 20px;
+}
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
 }
 
+.imagembeneficios{
+    width: 50%;
+    height: 500px;
+}
 
 
 

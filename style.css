@@ -7,31 +7,42 @@ body {
 }
 
 .principal{
-    background: #888888;
+    background: #BBBBBB;
     padding: 30px;
 
 }
 
 .tituloprincipal{
-    padding-left: 20px;
+    /* padding-left: ; */
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 100px;
+    background: #BBBBBB;
 }
 
 .titulocentralizado {
     text-align: center;
-    height: 40px;
+    height: 50px;
     /* border: 16px solid #000000; */
     padding: 5px;
     margin: -1px;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 50px;
 
 }
 
 p {
+    font-size: 20px;
     text-align: center;
+    font-style: italic;
 }
 
 #missao{
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 em strong {
@@ -45,9 +56,11 @@ em strong {
 
 .beneficios{
     /* display: flex; */
+    font-size: 20px;
     justify-content: center;
     background-color: #ffffff;  
     padding: 20px;
+
 }
 
 ul{

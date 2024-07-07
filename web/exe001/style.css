@@ -3,30 +3,63 @@
   text-decoration: none;
 }
 
-body{
-  background-image: linear-gradient( to right, rgb(255, 255, 255), rgb(154, 156, 154), rgb(138, 137, 137), rgb(48, 48, 48) ); 
+.title {
+  font-size: 70px;
+  border-left: 50px;
+  border: 20px;
+  margin-left: 200px;
+}
+
+.estiloprincipal {
+  background-image: linear-gradient(
+    to right,
+    rgb(172, 170, 170),
+    rgb(252, 252, 252),
+    rgb(59, 59, 59),
+    rgb(2, 2, 2)
+  );
 }
 
 a {
   color: inherit;
 }
 
-h1 {
-  font-size: 55px;
-}
-
 .estados {
-  color: seagreen;
+  color: rgb(42, 43, 42);
   font-size: 45px;
+  margin-left: 100px;
 }
 p {
   font-size: 20px;
 }
 
 .hoje {
-  color: darkred;
+  color: black;
 }
 
 .amanha {
-  color: darkblue;
+  color: white;
+}
+
+.estilosestados {
+  background-image: linear-gradient(
+    to right,
+    rgb(133, 132, 132),
+    rgb(121, 119, 119),
+    rgb(61, 61, 61),
+    rgb(2, 2, 2)
+  );
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+.cinemalocal {
+  font-size: 40px;
 }

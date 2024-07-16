@@ -2,9 +2,11 @@ body {
   font-family: Arial;
   display: grid;
   grid-template-columns: 1fr;
+  background: black;
 }
 h1 {
   text-align: center;
+  color: #fff;
 }
 
 .comprar {
@@ -24,6 +26,8 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 300px 300px;
   gap: 20px;
+  justify-content: center;
+
 }

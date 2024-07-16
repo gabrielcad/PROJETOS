@@ -1,0 +1,5 @@
+https://www.origamid.com/projetos/grid/
+https://www.origamid.com/projetos/css-grid-layout-guia-completo/
+
+https://grid.malven.co/
+https://css-tricks.com/snippets/css/complete-guide-grid/

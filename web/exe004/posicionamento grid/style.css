@@ -1,7 +1,20 @@
 /* Estilos Gerais */
 
 .grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.titulo {
+  grid-column: 1 / -1;
+}
+
+.info {
+  place-self: start;
+  display: grid;
+  place-items: start;
+  gap: 20px;
 }
 
 body {

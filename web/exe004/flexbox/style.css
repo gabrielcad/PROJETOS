@@ -3,6 +3,18 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-top: 60px;
+}
+
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 20px;
+}
+
+body{
+  margin: 0;
 }
 
 h2 {

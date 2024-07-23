@@ -27,19 +27,58 @@ a {
   margin: 10px;
 }
 
-img {
-  max-width: 50%;
-  border-radius: 4px;
-  border: 1px;
-  padding: 10px 0px;
+.grid {
+  margin: 100px;
+  background: #ffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  flex-wrap: wrap;
+  grid-template-rows: auto;
 }
 
 .titulo {
-  grid-column: 1 / -1;
+  grid-area: auto / 1;
+  padding: 10px;
+  margin: 20px 20px;
 }
 
-.grid {
+.texto {
+  grid-area: 2 / 1;
+}
+
+.foto {
+  max-width: 100%;
+  grid-area: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.texto {
+  margin: 20px;
+
+}
+
+.vermais {
+  grid-row: 3;
+  background-color: #ee2211;
+  color: #fff;
+  width: 80px;
+  padding: 10px 20px;
+  align-content: center;
+}
+
+.vantagens {
+  margin: 100px;
+  background: #ffff;
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  flex-wrap: wrap;
+  grid-template-rows: auto;
+}
+
+.vantagem{
+  font-size: 64px;
+  grid-area: 1 / 1;
+  grid-row: 1 / 4;
 }

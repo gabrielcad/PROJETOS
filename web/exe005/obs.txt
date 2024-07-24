@@ -1,0 +1,1 @@
+Esse exercicio foi referente a como trabalhar os posicionamentos das div, colunas e grid layout.

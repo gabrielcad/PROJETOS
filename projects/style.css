@@ -1,0 +1,38 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #000;
+}
+
+.principal {
+  background: #575656;
+  color: #fff;
+  text-align: center;
+  grid-column: 1fr 1fr;
+  padding: 100px;
+  margin: 50;
+  display: grid;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  display: grid;
+  border: 50px 20px;
+  background: #8f8d8d;
+  /* width: 100px; */
+}
+
+.conteudo{
+  margin: 100px;
+  border-radius: 20px;
+  border: 20px;
+  grid-column: auto;
+  background: #575656;
+}
+
+.cidade {
+  color: greenyellow;
+  font-size: 20px;
+
+}

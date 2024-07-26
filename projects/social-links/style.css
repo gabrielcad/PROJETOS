@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: #242424;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal {
+  display: inline-block;
+  background: #3a3a3a;
+  margin: 100px 500px;
+  color: #fff;
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 30%;
+}
+
+.conteudo{
+  display: inline-block;
+}
+
+img{
+  margin: 10px;
+  border-radius: 500px;
+}
+
+.links a {
+  display: inline-block;
+  background: #7e7d7d;
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  justify-self: center;
+  padding: 10px;
+  width: 60%;
+}
+
+.cidade{
+  color: rgb(72, 245, 81);
+  font-size: 20px;
+}
+
+h3{
+  font-size: 20px;
+}

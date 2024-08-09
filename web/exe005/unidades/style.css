@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: #fff;
+  background: blue;
+  display: inline-block;
+}
+
+p {
+  background: lightblue;
+}
+
+.px{
+  font-size: 24px;
+  padding: 16px 32px;
+}
+
+.rem{
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+body{
+  background: black;
+}

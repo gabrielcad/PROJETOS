@@ -1,5 +1,5 @@
 //string, number, boolean, ...
-const x: number = 25;
+let x: number = 50;
 console.log(x);
 
 // interferencia x annotation
@@ -18,9 +18,9 @@ const isAdmin: boolean = true;
 
 console.log(typeof firstName);
 
-firstName = "Godoi";
+const lastName = "Godoi";
 
-console.log(firstName);
+console.log('my last name is: ', + lastName);
 
 // object
 const myNumbers: number[] = [1, 2, 3];

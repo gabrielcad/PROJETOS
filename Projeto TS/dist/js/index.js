@@ -28,8 +28,8 @@ myTumple = [5, "teste", ["a", "b"]];
 // myTumple = [true, false, true]
 // object literals -> {prop: value}
 const user = {
-    name: "Pedro",
-    age: 87,
+  name: "Pedro",
+  age: 87,
 };
 console.log(user);
 console.log(user.name);

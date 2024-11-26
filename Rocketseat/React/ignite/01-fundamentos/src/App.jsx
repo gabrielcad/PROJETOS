@@ -7,6 +7,41 @@ import styles from "./App.module.css";
 
 import "./global.css";
 
+//author: { avatar_url: "string", name: "string", role: "string" }
+// publishedAt: Date
+// content: string
+
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: "https://github.com/diego3g.png",
+      name: "Diego Fernandes",
+      role: "CTO @ Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "Fala galeraa 👋" },
+      { type: "paragraph", content: "Acabe subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀"},
+      { type: 'link', content: 'gabriel-alessandro-batista-godoi-b72a001a3/'},
+    ],
+    publishedAt: new Date ('2022-11-23 20:00:00')
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: "https://github.com/maykbrito.png",
+      name: "Mayk Brito",
+      role: "Educator @ Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "Fala galeraa 👋" },
+      { type: "paragraph", content: "Acabe subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀"},
+      { type: 'link', content: 'gabriel-alessandro-batista-godoi-b72a001a3/'},
+    ],
+    publishedAt: new Date ('2022-11-20 13:14:00'),
+  },
+];
+
 export function App() {
   return (
     <div>
@@ -15,14 +50,15 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Gabriel Godoi"
-            content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo modi consequuntur odit repudiandae itaque ea obcaecati aspernatur aliquid, labore debitis consectetur commodi assumenda eveniet at mollitia unde vel fuga."
-          />
-          <PostDois
-            author="Leonardo Ribeiro"
-            content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo modi consequuntur odit repudiandae itaque ea obcaecati aspernatur aliquid, labore debitis consectetur commodi assumenda eveniet at mollitia unde vel fuga."
-          />
+          {posts.map(post => { 
+            return (
+              <Post 
+                author = {post.author}
+                content = {post.content}
+                publishedAt = {post.publishedAt}
+              />
+            )    
+          })}
         </main>
       </div>
     </div>

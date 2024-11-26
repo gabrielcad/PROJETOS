@@ -2,15 +2,19 @@ import { Avatar } from "./Avatar";
 import { Comment, CommentTwo } from "./Comment";
 import styles from "./Post.module.css";
 
-export function Post() {
+//author: { avatar_url: "string", name: "string", role: "string" }
+// publishedAt: Date
+// content: string
+
+export function Post({ author }) {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar hasBorder src="https://github.com/diego3g.png" />
+          <Avatar src= {author.avatarUrl} />
           <div className={styles.authorInfo}>
-            <strong>Diego Fernandes</strong>
-            <span>Web Developer</span>
+            <strong>{author.name}</strong>
+            <span>{author.role}</span>
           </div>
         </div>
 
@@ -36,7 +40,8 @@ export function Post() {
         </p>
 
         <p>
-          <a href=""> #novoprojeto </a> <a href=""> #nlw </a>
+          <a href=""> #novoprojeto </a> 
+          <a href=""> #nlw </a>
           <a href=""> #rocketseat</a>
         </p>
       </div>

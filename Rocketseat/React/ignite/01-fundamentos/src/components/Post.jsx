@@ -7,13 +7,10 @@ import styles from "./Post.module.css";
 import { useState } from "react";
 
 // Estado/useState = variáveis que eu quero que o componente monitore
-
-
 export function Post({ author, publishedAt, content }) {
   const [comments, setComments] = useState(['Post muito bacana, hein?!'])
 
   const [newCommentText, setNewCommentText] = useState ('')
-
 
   const publishedDateFormatted = format(
     publishedAt,

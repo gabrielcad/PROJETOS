@@ -1,12 +1,12 @@
 import "./App.css";
+import Form from './components/Form.tsx';
 
 function App() {
   return (
-    <>
-      <h1 className="text-2xl text-white font-bold">
-        LISTA DE TAREFAS
-      </h1>
-    </>
+    <div className="App">
+      <Form />
+
+    </div>
   );
 }
 

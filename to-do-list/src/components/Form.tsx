@@ -1,17 +1,21 @@
-import { Button, Grid, Grid2, TextField } from '@mui/material'
-import Typography from '@mui/material/Typography';
-import DeleteIcon from '@mui/icons-material/Delete';
+import { Button, Paper, TextField } from '@mui/material'
+
 
 export default function Form() {
   return (
     <div>
-      <h1 >
+      <h1 className ="text-black">
         Lista de Tarefas
       </h1>
+      <Paper >
+        <div style={{display:"flex", justifyContent: "center"}}>
 
-      <TextField id="outlined-basic" placeholder='digite a tarefa aqui ...' variant="outlined" />
-      <Button variant="outlined">Adicionar</Button>
-      <Typography><svg data-testid="DeleteIcon"></svg></Typography>
+          <TextField id="outlined-basic" placeholder='digite a tarefa aqui ...' variant="outlined" />
+          <Button variant="outlined">Adicionar</Button>
+
+        </div >
+      </Paper>
+
     </div>
   )
 }

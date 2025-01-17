@@ -10,11 +10,8 @@ export default function Form() {
       </h1>
 
       <TextField id="outlined-basic" placeholder='digite a tarefa aqui ...' variant="outlined" />
-      <Button variant="outlined">Outlined</Button>
-      <Grid item xs={4}>
-        <Typography><svg data-testid="DeleteIcon"></svg>
-        </Typography>
-      </Grid>
+      <Button variant="outlined">Adicionar</Button>
+      <Typography><svg data-testid="DeleteIcon"></svg></Typography>
     </div>
   )
 }

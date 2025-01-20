@@ -4,30 +4,41 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
-import DeleteIcon from '@mui/icons-material/Comment';
+import { useState } from 'react';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 
-export default function TodoItem() {
+
+export default function TodoItem({ value }: { value: string }) {
+  const [checked, setChecked] = useState<string[]>([]); // Array de itens selecionados
+
+  const handleToggle = () => {
+    if (checked.includes(value)) {
+      setChecked((prev) => prev.filter((item) => item !== value)); // Remove do array
+    } else {
+      setChecked((prev) => [...prev, value]); // Adiciona ao array
+    }
+  };
 
   return (
-    <ListItem
-      secondaryAction={
-        <IconButton edge="end" aria-label="delete">
-          <DeleteIcon />
-        </IconButton>
-      }
-      disablePadding
-    >
-      <ListItemButton role={undefined} dense>
-        <ListItemIcon>
-          <Checkbox
-            edge="start"
-            checked={checked.includes(value)}
-            tabIndex={-1}
-            disableRipple
-          />
-        </ListItemIcon>
-        <ListItemText />
-      </ListItemButton>
-    </ListItem>
+        <ListItem style={{borderRadius: "px"}}
+          secondaryAction={
+            <IconButton edge="end" aria-label="delete">
+              <DeleteOutlinedIcon />
+            </IconButton>
+          }
+          disablePadding
+        >
+          <ListItemButton role={undefined} dense onClick={handleToggle}>
+            <ListItemIcon >
+              <Checkbox
+                edge="start"
+                checked={checked.includes(value)}
+                tabIndex={-1}
+                disableRipple
+              />
+            </ListItemIcon>
+            <ListItemText />
+          </ListItemButton>
+        </ListItem>
   );
 }

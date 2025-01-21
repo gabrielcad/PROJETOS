@@ -20,7 +20,7 @@ export default function TodoItem({ value }: { value: string }) {
   };
 
   return (
-        <ListItem style={{borderRadius: "px"}}
+        <ListItem style={{borderRadius: "1"}}
           secondaryAction={
             <IconButton edge="end" aria-label="delete">
               <DeleteOutlinedIcon />

@@ -12,7 +12,7 @@ export default function Home() {
         <Form />
       </Container>
       <List sx={{ bgcolor: "background.paper", marginTop: "1em" }}>
-        <TodoItem value="minha tarefa" />
+        <TodoItem value=""/>
       </List>
 
     </div>

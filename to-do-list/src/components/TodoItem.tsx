@@ -20,7 +20,7 @@ export default function TodoItem({ value }: { value: string }) {
   };
 
   return (
-    <ListItem style={{ borderRadius: "1" }}
+    <ListItem
       secondaryAction={
         <IconButton edge="end" aria-label="delete">
           <DeleteOutlinedIcon />
@@ -37,7 +37,7 @@ export default function TodoItem({ value }: { value: string }) {
             disableRipple
           />
         </ListItemIcon>
-        <ListItemText />
+        <ListItemText primary={value} />
       </ListItemButton>
     </ListItem>
   );

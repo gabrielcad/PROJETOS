@@ -10,17 +10,19 @@ export default function Form({ value = "" }: FormProps) {
 
   return (
     <div >
-      <div>
         <Paper >
           <div style={{ display: "flex", justifyContent: "center" }}>
 
-            <TextField id="outlined-basic" placeholder='digite a tarefa aqui ...' variant="outlined" onChange={(e) => setText(e.target.value)} />
-            <Button variant="outlined" onClick={() => console.log(text)}>Adicionar</Button>
+            <TextField 
+            id="outlined-basic" 
+            placeholder='digite a tarefa aqui ...' 
+            variant="outlined" onChange={(e) => setText(e.target.value)} />
+            <Button 
+            variant="outlined" 
+            onClick={() => console.log(text)}>Adicionar</Button>
 
           </div >
         </Paper>
-
-      </div>
     </div>
   )
 }

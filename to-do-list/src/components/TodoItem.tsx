@@ -20,25 +20,25 @@ export default function TodoItem({ value }: { value: string }) {
   };
 
   return (
-        <ListItem style={{borderRadius: "1"}}
-          secondaryAction={
-            <IconButton edge="end" aria-label="delete">
-              <DeleteOutlinedIcon />
-            </IconButton>
-          }
-          disablePadding
-        >
-          <ListItemButton role={undefined} dense onClick={handleToggle}>
-            <ListItemIcon >
-              <Checkbox
-                edge="start"
-                checked={checked.includes(value)}
-                tabIndex={-1}
-                disableRipple
-              />
-            </ListItemIcon>
-            <ListItemText />
-          </ListItemButton>
-        </ListItem>
+    <ListItem style={{ borderRadius: "1" }}
+      secondaryAction={
+        <IconButton edge="end" aria-label="delete">
+          <DeleteOutlinedIcon />
+        </IconButton>
+      }
+      disablePadding
+    >
+      <ListItemButton role={undefined} dense onClick={handleToggle}>
+        <ListItemIcon >
+          <Checkbox
+            edge="start"
+            checked={checked.includes(value)}
+            tabIndex={-1}
+            disableRipple
+          />
+        </ListItemIcon>
+        <ListItemText />
+      </ListItemButton>
+    </ListItem>
   );
 }

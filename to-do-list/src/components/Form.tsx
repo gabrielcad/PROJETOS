@@ -1,8 +1,12 @@
 import { Button, Paper, TextField } from '@mui/material'
 import { useState } from 'react'
 
-export default function Form () { 
-  const [text, setText] = useState(null);
+interface FormProps {
+  value?: string;
+}
+
+export default function Form({ value = "" }: FormProps) {
+  const [text, setText] = useState<string>(value);
 
   return (
     <div >
@@ -17,6 +21,6 @@ export default function Form () {
         </Paper>
 
       </div>
-    </div> 
-      )
+    </div>
+  )
 }

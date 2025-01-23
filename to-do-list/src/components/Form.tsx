@@ -16,7 +16,7 @@ export default function Form({ onAddTodo }: FormProps) {
   };
 
   return (
-    <div >
+    <div>
         <Paper >
           <div style={{ display: "flex", justifyContent: "center" }}>
 

@@ -32,7 +32,8 @@ export default function Home() {
       <Header />
 
       <Container
-        maxWidth="xs"
+        maxWidth="lg"
+        minWidth=""
         style={{
           backgroundColor: "white",
           marginTop: "5em",
@@ -44,8 +45,7 @@ export default function Home() {
       </Container>
       <Container
         style={{
-          backgroundColor: "white",
-
+          backgroundColor: "transparent",
           borderRadius: "4px",
         }}
       >

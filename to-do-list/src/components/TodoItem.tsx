@@ -42,6 +42,7 @@ export default function TodoItem({
               checked={checked}
               tabIndex={-1}
               disableRipple
+              bg-green-100
             />
           </ListItemIcon>
           <ListItemText primary={value} />

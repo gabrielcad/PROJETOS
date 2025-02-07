@@ -28,41 +28,43 @@ export default function Home() {
   };
 
   return (
-    <div>
-      <Header />
-
-      <Container
-        maxWidth="lg"
-        minWidth=""
-        style={{
-          backgroundColor: "white",
-          marginTop: "5em",
-          padding: "2em",
-          borderRadius: "4px",
-        }}
-      >
-        <Form onAddTodo={addTodo} />
-      </Container>
-      <Container
-        style={{
-          backgroundColor: "transparent",
-          borderRadius: "4px",
-        }}
-      >
-        <List sx={{ marginTop: "1em" }}>
-          {todos.map((todo) => (
-            <div style={{ marginTop: "1em" }}>
-              <TodoItem
-                key={todo}
-                value={todo}
-                checked={checked.includes(todo)}
-                onToggle={handleToggle}
-                onDelete={handleDelete}
-              />
-            </div>
-          ))}
-        </List>
-      </Container>
-    </div>
+    <main>
+      <div>
+        <Header />
+      </div>
+      <body>
+        <Container
+          style={{
+            background:"white",
+            marginTop: "5em",
+            padding: "2em",
+            borderRadius: "4px",
+            maxWidth: "",
+          }}
+        >
+          <Form onAddTodo={addTodo} />
+        </Container>
+        <Container
+          style={{
+            backgroundColor: "transparent",
+            borderRadius: "4px",
+          }}
+        >
+          <List sx={{ marginTop: "1em" }}>
+            {todos.map((todo) => (
+              <div style={{ marginTop: "1em" }}>
+                <TodoItem
+                  key={todo}
+                  value={todo}
+                  checked={checked.includes(todo)}
+                  onToggle={handleToggle}
+                  onDelete={handleDelete}
+                />
+              </div>
+            ))}
+          </List>
+        </Container>
+      </body>
+    </main>
   );
 }

@@ -10,23 +10,17 @@ body * {
 }
 
 body {
-  /* background-image: url(/assets/bg-desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover; */
-
   background: url(/assets/bg-desktop.jpg) no-repeat top center/cover;
 }
 
 #container {
   width: 360px;
-  height: 712px;
-  border: 1px solid red;
-  margin: auto;
+  margin: 56px auto 0px;
 }
 
 #profile {
   text-align: center;
+  padding: 24px;
 }
 
 #profile img {
@@ -36,4 +30,17 @@ body {
 #profile p {
   font-weight: 500;
   line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+ul{
+  list-style: none;
+  
+}
+
+ul li {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
 }

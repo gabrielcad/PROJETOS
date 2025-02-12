@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body * {
@@ -10,7 +11,7 @@ body * {
 }
 
 body {
-  background: url(/assets/bg-desktop.jpg) no-repeat top center/cover;
+  background: url(/assets/bg-desktop.jpg) no-repeat top center;
 }
 
 #container {
@@ -20,7 +21,7 @@ body {
 
 #profile {
   text-align: center;
-  padding: 24px;
+  padding: 20px;
 }
 
 #profile img {
@@ -39,8 +40,12 @@ ul{
   
 }
 
-ul li {
-  border: 1px solid red;
+ul li a{
+  border: 1px solid rgb(97, 96, 96);
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 8px;
+ 
 }

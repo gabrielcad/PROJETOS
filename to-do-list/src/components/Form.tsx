@@ -20,7 +20,7 @@ export default function Form({ onAddTodo }: FormProps) {
       <Paper>
         <div style={{ display: "flex"}}>
           <TextField
-            style={{width: 800}}            
+            style={{width: 500}}            
             id="outlined-basic"
             placeholder="digite a tarefa aqui ..."
             label="Tarefa 📖"

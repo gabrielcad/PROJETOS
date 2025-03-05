@@ -21,38 +21,41 @@ export default function TodoItem({
   onDelete,
 }: TodoItemProps) {
   return (
-    
-      <Paper bg-gray-200>
-        <ListItem
-          secondaryAction={
-            <IconButton
-              edge="end"
-              aria-label="delete"
-              onClick={() => onDelete(value)}
-            >
-              <DeleteOutlinedIcon />
-            </IconButton>
-          }
-          disablePadding
-          style={{ borderRadius: "50px" }}
-        >
-          <ListItemButton
-            role={undefined}
-            dense
-            onClick={() => onToggle(value)}
+
+    <Paper bg-gray-200>
+      <ListItem
+        secondaryAction={
+          <IconButton
+            edge="end"
+            aria-label="delete"
+            onClick={() => onDelete(value)}
           >
-            <ListItemIcon style={{ borderRadius: "50px" }}>
-              <Checkbox
-                edge="start"
-                checked={checked}
-                tabIndex={-1}
-                disableRipple
-                bg-green-100
-              />
-            </ListItemIcon>
-            <ListItemText primary={value} />
+            <DeleteOutlinedIcon />
+          </IconButton>
+        }
+        disablePadding
+        style={{ borderRadius: "50px" }}
+      >
+        <ListItemButton
+          role={undefined}
+          dense
+          onClick={() => onToggle(value)}
+        >
+          <ListItemIcon style={{ borderRadius: "50px" }}>
+            <Checkbox
+              edge="start"
+              checked={checked}
+              tabIndex={-1}
+              disableRipple
+              bg-green-100
+            />
+          </ListItemIcon>
+          <ListItemText primary={value}
+            style={{
+              textDecoration: checked ? "line-through" : "none",
+              color: checked ? "gray" : "black" }}/>
           </ListItemButton>
-        </ListItem>
-      </Paper>
+      </ListItem>
+    </Paper>
   );
 }

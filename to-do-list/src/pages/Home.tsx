@@ -3,6 +3,7 @@ import Form from "../components/Form";
 import TodoItem from "../components/TodoItem";
 import { Header } from "../components/Header";
 import { useState } from "react";
+import { Footer } from "../components/Progress";
 
 export default function Home() {
   const [todos, setTodos] = useState<string[]>([]);
@@ -64,6 +65,7 @@ export default function Home() {
             ))}
           </List>
         </Container>
+        <Footer/>
       </body>
     </main>
   );

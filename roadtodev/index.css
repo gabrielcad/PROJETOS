@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family: "inter", sans-serif;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+  background: #0101;
+}
+
+#title {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  color: #000
+}
+
+#list {
+  text-align: center;
+  padding: 20px;
+}
+
+
+#input {
+  height: 30px;
+}
+
+  

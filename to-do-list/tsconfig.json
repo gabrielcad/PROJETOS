@@ -7,13 +7,5 @@
     {
       "path": "./tsconfig.node.json"
     },
-    {
-      "excalidraw.language": "br-BR"
-    },
-    {
-      "workbench.editorAssociations": {
-        "*.svg": "editor.excalidraw"
-      }
-    },
   ]
 }

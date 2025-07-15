@@ -5,30 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="./index.js">
   <title>RoadtoDev</title>
 </head>
 
 <body>
-
+  <script src="./index.js"></script>
   <div id="title">Projeto todo list</div>
 
   <div id="container">
 
     <div id="createtask">
-      <input type="text" id="input" placeholder="Escreva sua nova tarefa aqui ...">
-      <button id="inserir">Inserir</button>
+      <input type="text" id="meuInput" placeholder="Escreva sua nova tarefa aqui ...">
+      <button onclick="enviarDados()" id="inserir">Inserir</button>
     </div>
     <div id="list" style="padding: 10px 20px;">
       <h2 style="text-align: start;">Tarefas</h2>
-      <ul>
-        <li style="padding: 10px 10px; width: 10px;">
-        <li>1º</li>
-        <li>2º</li>
-        <li>3º</li>
-        </li>
+      <ul id="listaDados">
       </ul>
     </div>
 </body>
+
 
 </html>

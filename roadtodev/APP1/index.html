@@ -9,21 +9,24 @@
 </head>
 
 <body>
-  <script src="./index.js"></script>
-  <div id="title">Projeto todo list</div>
+
+  <div id="title">Todo List</div>
 
   <div id="container">
-
     <div id="createtask">
       <input type="text" id="meuInput" placeholder="Escreva sua nova tarefa aqui ...">
-      <button onclick="enviarDados()" id="inserir">Inserir</button>
+      <div id="botao">
+        <button onclick="enviarDados()" id="inserir">+</button>
+      </div>
     </div>
     <div id="list" style="padding: 10px 20px;">
       <h2 style="text-align: start;">Tarefas</h2>
       <ul id="listaDados">
       </ul>
     </div>
-</body>
 
+  </div>
+  <script src="./index.js"></script>
+</body>
 
 </html>

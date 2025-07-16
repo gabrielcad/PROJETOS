@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-  width: 80%;
+  width: 40%;
   margin: 56px auto 0px;
   padding: 50px 24px;
   background: #fff;
@@ -25,17 +25,12 @@ body {
 
 #list {
   text-align: center;
-  padding: 20px;
 }
 
-ul {
-  display: flex;
-  padding: 10px 10px; width: 10px;"
-}
 
 #meuInput {
   height: 25px;
-  width: 500px;
+  width: 300px;
   align-items: center;
 }
 
@@ -49,4 +44,14 @@ ul {
 #inserir {
   width: 80px;
   height: 30px;
+}
+
+li {
+  padding: 20px;
+  background: #0404;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px 10px; width: 10px;" */
 }

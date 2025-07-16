@@ -1,9 +1,16 @@
 function enviarDados() {
 
-  const inputValue = document.getElementById("meuInput").value;
+  const input = document.getElementById("meuInput");
+  const inputValue = input.value.trim();
 
-  let minhaVariavel = inputValue;
+  if (inputValue === "") return;
 
-  const outputElement = document.getElementById("listaDados").textContent = "" + inputValue;
+  const ul = document.getElementById("listaDados");
+  const li = document.createElement("li");
+  li.textContent = inputValue;
+  ul.appendChild(li);
+
+  input.value = "";
 
 };
+

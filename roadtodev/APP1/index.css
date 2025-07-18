@@ -26,8 +26,16 @@ body {
 
 #list {
   text-align: center;
+     grid-template-columns: none;
+
 }
 
+#listaDados {
+  display: flex;
+  flex-direction: column;
+  /* display: inline-flex; */
+  /* align-items: center; */
+}
 
 #meuInput {
   height: 25px;
@@ -56,6 +64,7 @@ body {
 
 li {
   padding: 20px;
+
 }
 
 ul {

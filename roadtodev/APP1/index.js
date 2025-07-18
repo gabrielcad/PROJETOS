@@ -5,38 +5,30 @@ function enviarDados() {
   const input = document.getElementById("meuInput");
   const inputValue = input.value.trim();
 
+  // IF caso usuário enviar o input sem valor
   if (inputValue === "") return;
 
+  // Aqui eu listo o valor do input e salvo como li
+  
   const ul = document.getElementById("listaDados");
   const li = document.createElement("li");
+  li.style.display = 'inline-flex'
+  li.alignItems = 'center'
   li.textContent = inputValue;
   ul.appendChild(li);
 
-  // Preciso adicionar um checkbox no começo de cada tarefa
+  //  Aqui eu adiciono o checkbox no começo de cada tarefa
 
-  function inserirCheckbox() {
-    const listaDados = document.getElementById("listaDados");
-    const check = document.createElement("li");
-    checkbox.type = 'checkbox';
-    checkbox.value = inputValue;
-    checkbox.style.display = 'inline';
-  };
-
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  
+  li.appendChild(checkbox);
 
   // Depois quero marcar a linha da tarefa com um risco
 
-  const taskList = document.getElementById('taskList');
-
-  li.addEventListener('click', function (event) {
-    const target = event.target;
-
-    if (target.tagName === 'LI') {
-      target.classList.toggle('completed');
-    }
-  });
-
-// aqui eu reseto o valor do input após clicar no botão adicionar
+  // aqui eu reseto o valor do input após clicar no botão adicionar
   input.value = "";
+
 };
 
 

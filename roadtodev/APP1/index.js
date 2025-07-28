@@ -9,22 +9,34 @@ function enviarDados() {
   if (inputValue === "") return;
 
   // Aqui eu listo o valor do input e salvo como li
-  
+
   const ul = document.getElementById("listaDados");
   const li = document.createElement("li");
   li.style.display = 'inline-flex'
   li.alignItems = 'center'
-  li.textContent = inputValue;
-  ul.appendChild(li);
+
 
   //  Aqui eu adiciono o checkbox no começo de cada tarefa
 
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
-  
-  li.appendChild(checkbox);
+  checkbox.style.marginRight = "2px";
+  checkbox.style.width = "28px";
+  checkbox.style.color = "#00FF00;";
 
-  // Depois quero marcar a linha da tarefa com um risco
+
+  const textoTarefa = document.createElement("span");
+  textoTarefa.textContent = inputValue
+
+  li.appendChild(checkbox);
+  li.appendChild(textoTarefa)
+  ul.appendChild(li);
+
+//Aqui é a função pra adicionar um line through quando der check na tarefa
+
+  checkbox.addEventListener("change", function () {
+    textoTarefa.style.textDecoration = checkbox.checked ? "line-through" : "none";
+  });
 
   // aqui eu reseto o valor do input após clicar no botão adicionar
   input.value = "";

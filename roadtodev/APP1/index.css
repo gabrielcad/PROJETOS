@@ -33,8 +33,6 @@ body {
 #listaDados {
   display: flex;
   flex-direction: column;
-  /* display: inline-flex; */
-  /* align-items: center; */
 }
 
 #meuInput {
@@ -63,24 +61,5 @@ body {
 }
 
 li {
-  padding: 20px;
-
-}
-
-ul {
-  list-style-type: none;
-  padding: 10px 10px; width: 10px;" */
-}
-
-#tarefa2 {
-  background:#00FF00;
-}
-
-.task {
-  text-decoration: none; /* Remove o sublinhado padrão */
-}
-
-.marcarComoFeito {
-  text-decoration: line-through; /* Adiciona um risco no texto */
-  color: #aaa; /* Opcional: altera a cor para indicar concluído */
+  padding: 15px;
 }

@@ -22,7 +22,8 @@ function enviarDados() {
   checkbox.type = "checkbox";
   checkbox.style.marginRight = "2px";
   checkbox.style.width = "28px";
-  checkbox.style.color = "#00FF00;";
+  // preciso alterar a cor de fundo quando der check pra verde
+  // checkbox.style.color = "#00FF00;";
 
 
   const textoTarefa = document.createElement("span");
@@ -32,7 +33,7 @@ function enviarDados() {
   li.appendChild(textoTarefa)
   ul.appendChild(li);
 
-//Aqui é a função pra adicionar um line through quando der check na tarefa
+  //Aqui é a função pra adicionar um line through quando der check na tarefa
 
   checkbox.addEventListener("change", function () {
     textoTarefa.style.textDecoration = checkbox.checked ? "line-through" : "none";
@@ -41,7 +42,18 @@ function enviarDados() {
   // aqui eu reseto o valor do input após clicar no botão adicionar
   input.value = "";
 
+
+  // Agora preciso armazenar os dados da li no localstorage 
+  const x = document.getElementById("result");
+  if (typeof (Storage) !== "undefined") {
+    x.innerHTML = "Your browser supports Web storage!";
+  } else {
+    x.innerHTML = "Sorry, no Web storage support!";
+  }
+
 };
+
+// criar um delete pra deletar um valor da listagem
 
 
 
